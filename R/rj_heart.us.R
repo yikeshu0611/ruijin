@@ -157,6 +157,8 @@ rj_heart.us <- function(dir) {
         )
         df = rbind(df, df.i)
     }
+    df=as.matrix(df)
+    df=ifelse(is.na(df),"",df)
     index.names = c(
         tmcn::toUTF8('\u4E3B\u52A8\u8109\u6839\u90E8\u5185\u5F84'),
         tmcn::toUTF8('\u5DE6\u623F\u5185\u5F84'),
