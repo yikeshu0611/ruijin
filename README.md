@@ -1,7 +1,9 @@
 # ruijin
 
 library(ruijin)
+
 df=rj_labtest.getdata(dir='F:/实验室指标')
+
 rs=rj_labtest.query(data = df,
                  query = c('白细胞计数',
                            '红细胞计数',
@@ -30,7 +32,6 @@ rs=rj_labtest.query(data = df,
                            'C反应蛋白(高敏)(hsCRP)',
                            '尿液肌酐','尿微量白蛋白','尿白蛋白比肌酐',
                            '氨基末端B型利钠肽前体',
-                           'APTT','PT','INR','TT','Fg','纤维蛋白降解产物','D-二聚体定量'
-
-                    ))
+                           'APTT','PT','INR','TT','Fg','纤维蛋白降解产物','D-二聚体定量'))
+                           
 rs
