@@ -5,13 +5,9 @@ library(ruijin)
 df=rj_labtest.getdata(dir='F:/实验室指标')
 
 rs=rj_labtest.query(data = df,
-
-                 query = c('白细胞计数',
-                 
-                           '红细胞计数',
-                           
-                           '血红蛋白',
-                           
+                 query = c('白细胞计数',                 
+                           '红细胞计数',                           
+                           '血红蛋白',                           
                            '中性粒细胞%',
                            '淋巴细胞%',
                            '单核细胞%',
