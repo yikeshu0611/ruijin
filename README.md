@@ -1,9 +1,10 @@
 # ruijin
+install.packages("devtools")    
+devtools::install_github("yikeshu0611/ruijin")    
 
 library(ruijin)
 
-df=rj_labtest.getdata(dir='F:/实验室指标')
-
+df=rj_labtest.getdata(dir='F:/实验室指标')   
 rs=rj_labtest.query(data = df,
                  query = c(   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'白细胞计数',    
