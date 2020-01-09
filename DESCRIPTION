@@ -1,14 +1,12 @@
 Package: ruijin
-Title: What the Package Does (One Line, Title Case)
+Title: clear data for ruijin
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Jing",
+           family = "Zhang",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "zj391120@163.com")
+Description: clear data for ruijin.
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
@@ -17,4 +15,6 @@ Imports:
     plyr,
     tmcn,
     stringi,
-    stringr
+    stringr,
+    magrittr,
+    set
