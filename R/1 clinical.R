@@ -68,8 +68,8 @@ clinical <- function(path){
         df = rbind(df, df.i)
     }
     colnames(df)=c(tmcn::toUTF8('\u6837\u672C\u53F7'),
-                   tmcn::toUTF8('\u4F4F\u9662\u53F7'),
                    tmcn::toUTF8('\u59D3\u540D'),
+                   tmcn::toUTF8('\u4F4F\u9662\u53F7'),
                    tmcn::toUTF8('\u6027\u522B'),
                    tmcn::toUTF8('\u6C11\u65CF'),
                    tmcn::toUTF8('\u5A5A\u59FB'),
