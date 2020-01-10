@@ -15,6 +15,7 @@ lab_query<-function(path,query){
     txt3=txt2[[1]][nchar(txt2[[1]])!=0]
     df=labtxt_todf(txt3)
     df=as.data.frame(df)
+    colnames(df)=tolower(colnames(df))
     query=stringi::stri_trans_nfkd(query)
     id=df[,"series_id"]
     id.u=as.character(unique(id))
