@@ -21,6 +21,9 @@ clinical <- function(path){
         sex=do::Replace0(dd4,c(tmcn::toUTF8('.*\u6027\u522B[ :]{0,}'),
                                 tmcn::toUTF8('[ ;:]{0,}\u5E74\u9F84.*'),
                                ' '))
+        age=do::Replace0(dd4,c(tmcn::toUTF8('.*\u5E74\u9F84[ :]{0,}'),
+                               tmcn::toUTF8('[ ;:]{0,}\u6C11\u65CF.*'),
+                               ' '))
         nation=do::Replace0(dd4,c(tmcn::toUTF8('.*\u6C11\u65CF[ :]{0,}'),
                                tmcn::toUTF8('[ ;:]{0,}\u5A5A\u59FB.*'),
                                ' '))
@@ -62,7 +65,7 @@ clinical <- function(path){
                    do::Replace0(dd4,c(tmcn::toUTF8('.*\u8840\u538B:'),
                                       'mmHg.*','.*/')),
                    "")
-        df.i=data.frame(series_id,name,hosp_id,sex,nation,marry,birthplace,
+        df.i=data.frame(series_id,name,hosp_id,sex,age,nation,marry,birthplace,
                         work,income_date,speaker,compaint,history,
                         old_disease,privet_history,BMI,sbp,dbp)
         df = rbind(df, df.i)
@@ -71,6 +74,7 @@ clinical <- function(path){
                    tmcn::toUTF8('\u59D3\u540D'),
                    tmcn::toUTF8('\u4F4F\u9662\u53F7'),
                    tmcn::toUTF8('\u6027\u522B'),
+                   tmcn::toUTF8('\u5E74\u9F84'),
                    tmcn::toUTF8('\u6C11\u65CF'),
                    tmcn::toUTF8('\u5A5A\u59FB'),
                    tmcn::toUTF8('\u51FA\u751F\u5730'),
