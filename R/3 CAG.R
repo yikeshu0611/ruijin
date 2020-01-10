@@ -28,7 +28,7 @@ cag <- function(path){
             syn=do::Replace0(txt2[i],'.*Syntax')
             stringr::str_extract(do::left(syn,10),'[0-9\\.]{1,10}')
         }else{
-            NA
+            ""
         }
         #message('------')
         #print(Syntax)
@@ -45,7 +45,7 @@ cag <- function(path){
                 grepl('\\+PCI',txt.txt)){
             pcifor=do::mid(txt.txt,unlist(gregexpr('PCIfor',txt.txt))[1]+6,nchar(txt.txt))
             do::Replace0(pcifor,c(tmcn::toUTF8(';\u7ED3\u679C:.*')))
-        }else{NA}
+        }else{""}
         #message('------')
         #message('------')
         #print(IVUS)

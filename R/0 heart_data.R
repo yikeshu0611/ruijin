@@ -10,7 +10,7 @@ heart_data <- function(path,query){
         # 1 clinical
         res_clinical = clinical(path)
         # 2 lab
-        res_lab=lab_query(path,query)
+        res_lab=lab_query(path,query_words())
         # 3 CAG
         res_cag=cag(path)
         # 4 heart us
