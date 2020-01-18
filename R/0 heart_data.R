@@ -1,12 +1,11 @@
 #' to clear data
 #'
 #' @param path path
-#' @param query query words
 #'
 #' @return
 #' @export
 #'
-heart_data <- function(path,query){
+heart_data <- function(path){
         # 1 clinical
         res_clinical = clinical(path)
         # 2 lab

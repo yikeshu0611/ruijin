@@ -59,7 +59,7 @@ cag <- function(path){
                    tmcn::toUTF8('CAG\u64CD\u4F5C\u65F6\u95F4'),
                    'Syntax',
                    tmcn::toUTF8('CAG\u7ED3\u679C'),
-                   tmcn::toUTF8('CAG\u9020\u5F71\u7ED3\u679C'),
+                   tmcn::toUTF8('CAG\u9020\u5F71\u663E\u793A'),
                    tmcn::toUTF8('PCI\u7ED3\u679C'))
     df
 }

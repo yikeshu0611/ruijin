@@ -4,12 +4,10 @@
 \alias{heart_data}
 \title{to clear data}
 \usage{
-heart_data(path, query)
+heart_data(path)
 }
 \arguments{
 \item{path}{path}
-
-\item{query}{query words}
 }
 \description{
 to clear data

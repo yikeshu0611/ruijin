@@ -182,7 +182,7 @@ heart_us <- function(path) {
         tmcn::toUTF8('\u80BA\u52A8\u8109\u6536\u7F29\u538B'),
         tmcn::toUTF8('E\u5CF0'),
         tmcn::toUTF8('A\u5CF0'),
-        tmcn::toUTF8('\u8BCA\u65AD\u610F\u89C1')
+        tmcn::toUTF8('\u5FC3\u8D85\u8BCA\u65AD\u610F\u89C1')
     )
     colnames(df) =        index.names
     df
